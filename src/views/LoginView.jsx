@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import AuthService from '../service/AuthService';
 import DynamicForm from '@spillay/formmanager'; 
-import '../styles/fm.css'
+
 
 export default class LoginView extends React.Component {
     constructor(props) {
