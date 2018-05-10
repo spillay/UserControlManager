@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import AuthService from '../service/AuthService';
 import DynamicForm from '@spillay/formmanager'; 
 import './sf.css'   // FormManager css 
-import '../styles/loginView.scss'
+import '../styles/loginView.scss'    // loginView css
 
 
 class LoginView extends React.Component {
