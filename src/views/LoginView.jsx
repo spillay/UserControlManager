@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import AuthService from '../service/AuthService';
 import DynamicForm from '@spillay/formmanager'; 
-import '../styles/sf.css'   // FormManager css 
-import '../styles/loginView.scss'    // loginView css
+
+// Bhaskar This goes in LoginPage
+//import '../styles/sf.css'   // FormManager css 
+//import '../styles/loginView.scss'    // loginView css
 
 
 export default class LoginView extends React.Component {
