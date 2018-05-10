@@ -23,9 +23,8 @@
     "test": "jest",
     "clean": "rimraf dist/ && rimraf test-dist/",
     "sass:dist-min": "node-sass  --output-style=compressed --importer=node_modules/node-sass-tilde-importer src/styles/styles.scss > dist/css/usercontrolmanager.min.css",
-    "sass:dist-min-loginView": "node-sass  --output-style=compressed --importer=node_modules/node-sass-tilde-importer src/styles/loginView.scss > dist/css/loginView.min.css",
     "sass:dist": "node-sass  --importer=node_modules/node-sass-tilde-importer src/styles/styles.scss > dist/css/usercontrolmanager.css",
-    "sass": "npm run sass:dist-min && npm run sass:dist && npm run sass:dist-min-loginView",
+    "sass": "npm run sass:dist-min && npm run sass:dist",
     "prebuild": "mkdirp ./dist && mkdirp ./dist/css"
   },
   "repository": {
@@ -88,7 +87,7 @@
   },
   "homepage": "https://github.com/spillay/UserControlManager#readme",
   "dependencies": {
-    "@spillay/formmanager": "^1.0.5",
+    "@spillay/formmanager": "^1.0.8",
     "bootstrap": "^4.0.0",
     "bootstrap-select": "^1.13.0",
     "bootstrap-slider": "^10.0.2",
