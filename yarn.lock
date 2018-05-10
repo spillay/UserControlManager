@@ -27,9 +27,9 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
-"@spillay/formmanager@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@spillay/formmanager/-/formmanager-1.0.5.tgz#927f20a6eb81768e09650b81d12c4a4c0f1db748"
+"@spillay/formmanager@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@spillay/formmanager/-/formmanager-1.0.8.tgz#5ee966e9e2a0280b043664e292c7f15e131c0cf4"
   dependencies:
     bootstrap "^4.0.0"
     bootstrap-select "^1.13.0"
