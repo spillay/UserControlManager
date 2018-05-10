@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import PropTypes from 'prop-types';
 import AuthService from '../service/AuthService';
 import DynamicForm from '@spillay/formmanager'; 
@@ -102,7 +102,7 @@ LoginView.propTypes = {
     groups:PropTypes.number.isRequired,
     columns:PropTypes.string.isRequired,
     modelForm: PropTypes.string.isRequired,
-    submitFunc: PropTypes.func.isRequired
+    // submitFunc: PropTypes.func.isRequired
 };
 /*
 
