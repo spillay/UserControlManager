@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginView test 1`] = `
+<div>
+  <main
+    className="container pt-7"
+    role="main"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-6 offset-md-4"
+      >
+        <div
+          className="card"
+          style={
+            Object {
+              "width": "30rem",
+            }
+          }
+        >
+          <img
+            alt="South Africa"
+            className="card-img-top custom-image mx-auto img-thumbnail"
+          />
+          <div
+            className="card-body"
+          >
+            <span>
+              <i
+                aria-hidden="true"
+                className="fa fa fa-forward"
+              />
+                Login 
+            </span>
+            <form
+              onSubmit={[Function]}
+            >
+              <hr />
+              <div
+                className="row"
+              >
+                <div
+                  className="col-md-12 "
+                >
+                  <button
+                    className="btn btn-primary btn-block"
+                    disabled={true}
+                  >
+                    <i
+                      aria-hidden="true"
+                      className="fa fa fa-sign-in"
+                    />
+                  </button>
+                </div>
+              </div>
+            </form>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+`;

@@ -1,4 +1,4 @@
-import loginView from './views/loginView.jsx';
-import blankView from './views/blankView.jsx';
+import LoginView from './views/LoginView.jsx';
+import BlankView from './views/BlankView.jsx';
 
-export {loginView,blankView}
+export {BlankView,LoginView}

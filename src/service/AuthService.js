@@ -1,5 +1,6 @@
 export default class AuthService {
     constructor(domain) {
+        console.log("AuthService Constructor")
         this.domain = domain || 'http://localhost:9000'
     }
     register(userModel){

@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AuthService from '../service/AuthService';
-import DynamicForm from '@spillay/formmanager';       
+import { DynamicForm } from '@spillay/formmanager';
 
-class LoginView extends React.Component {
+export default class LoginView extends React.Component {
     constructor(props) {
         super(props);
+        console.log("in LoginView constructor");
         this.Auth = new AuthService();
         this.state = {
             submitted: false
@@ -43,7 +44,7 @@ class LoginView extends React.Component {
             console.log("now you can submit...", data);  // alert("now you can submit..."+JSON.stringify(data))
             this.Auth.login(data).then((res) => {
                 console.log(res);
-                this.props.submitFunc(res);
+                //this.props.submitFunc(res);
             })
         }
     }
@@ -54,7 +55,7 @@ class LoginView extends React.Component {
                     <div className="row">
                         <div className="col-md-6 offset-md-4">
                             <div className="card" style={{ width: '30rem' }}>
-                                <img className="card-img-top custom-image mx-auto img-thumbnail" src={logo} alt="South Africa" />
+                                <img className="card-img-top custom-image mx-auto img-thumbnail" alt="South Africa" />
                                 <div className="card-body">
                                     <span><i className="fa fa fa-forward" aria-hidden="true"></i>  Login </span>
                                     <form onSubmit={this.handleSubmit}>
@@ -65,7 +66,6 @@ class LoginView extends React.Component {
                                             ref={(node) => this.dynForm = node}
                                             reload={this.reload} >
                                         </DynamicForm>
-
                                         <hr />
                                         <div className='row'>
                                             <div className='col-md-12 '>
@@ -80,7 +80,7 @@ class LoginView extends React.Component {
                                     </form>
 
                                     {this.props.children}
-                                   
+
 
                                     <hr />
                                 </div>
@@ -97,8 +97,12 @@ class LoginView extends React.Component {
 }
 LoginView.propTypes = {
     modelForm: PropTypes.string,
-    submitFunc: PropTypes.func.isRequired
+    //logo: PropTypes.object.isRequired,
+    //submitFunc: PropTypes.func.isRequired
 };
+/*
+
+*/
 /*
  <div className='row'>
                                         <div className='col-md-12'>

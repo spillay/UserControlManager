@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class registerView extends React.Component {
+class RegisterView extends React.Component {
     constructor(props) {
         super(props);
     } // end of constructor
@@ -16,6 +16,7 @@ class registerView extends React.Component {
     }
 
 }
-registerView.propTypes = {
+RegisterView.propTypes = {
     modelForm: PropTypes.string
 };
+export default RegisterView;

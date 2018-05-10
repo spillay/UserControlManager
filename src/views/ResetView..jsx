@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class blankView extends React.Component {
+class ResetView extends React.Component {
     constructor(props) {
         super(props);
     } // end of constructor
@@ -10,12 +10,13 @@ class blankView extends React.Component {
     render() {
         return (
             <div>
-              Balnk View for Testing Purposes
+              Reset View using {this.props.modelForm}
             </div>
         )
     }
 
 }
-blankView.propTypes = {
-    blankForm: PropTypes.string
+ResetView.propTypes = {
+    modelForm: PropTypes.string
 };
+export default ResetView;
