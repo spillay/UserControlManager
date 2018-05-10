@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AuthService from '../service/AuthService';
-import DynamicForm from '@spillay/formmanager';       
+import DynamicForm from '@spillay/formmanager'; 
+import './sf.css'   // FormManager css 
+import '../styles/loginView.scss'
+
 
 class LoginView extends React.Component {
     constructor(props) {
@@ -44,7 +47,9 @@ class LoginView extends React.Component {
             this.Auth.login(data).then((res) => {
                 console.log(res);
                 this.props.submitFunc(res);
-            })
+            }).catch((error) => {
+                console.log(`error :${error}`)
+              })
         }
     }
     render() {
@@ -60,8 +65,8 @@ class LoginView extends React.Component {
                                     <form onSubmit={this.handleSubmit}>
                                         <DynamicForm           // configure the form  controls
                                             model={this.props.modelForm}
-                                            groups={1} // groups will be 1 to 4 only 1=col-md-12,  2= col-md-6 , 3=col-md-4  4= col-md-3
-                                            columns="col-md-12"
+                                            groups={this.props.groups} // groups will be 1 to 4 only 1=col-md-12,  2= col-md-6 , 3=col-md-4  4= col-md-3
+                                            columns={this.props.columns}
                                             ref={(node) => this.dynForm = node}
                                             reload={this.reload} >
                                         </DynamicForm>
@@ -96,7 +101,9 @@ class LoginView extends React.Component {
 
 }
 LoginView.propTypes = {
-    modelForm: PropTypes.string,
+    groups:PropTypes.number.isRequired,
+    columns:PropTypes.string.isRequired,
+    modelForm: PropTypes.string.isRequired,
     submitFunc: PropTypes.func.isRequired
 };
 /*

@@ -22,6 +22,7 @@
     "test": "node node_modules/mocha/bin/mocha --compilers js:babel-core/register --reporter spec test-dist/*",
     "clean": "rimraf dist/ && rimraf test-dist/",
     "sass:dist-min": "node-sass  --output-style=compressed --importer=node_modules/node-sass-tilde-importer src/styles/styles.scss > dist/css/formmanager.min.css",
+    "sass:dist-min-loginView": "node-sass  --output-style=compressed --importer=node_modules/node-sass-tilde-importer src/styles/loginView.scss > dist/css/loginView.min.css",
     "sass:dist": "node-sass  --importer=node_modules/node-sass-tilde-importer src/styles/styles.scss > dist/css/usercontrolmanager.css",
     "sass": "npm run sass:dist-min && npm run sass:dist",
     "prebuild": "mkdirp ./dist && mkdirp ./dist/css"
